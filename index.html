@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    >
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+    <main>
+      <div class="product-preview-card">
+        <picture class="product-preview-card__image">
+          <source
+            media="(min-width: 768px)"
+            srcset="images/image-product-desktop.jpg"
+          >
+          <img
+            class="product-preview-card__image-img"
+            src="images/image-product-mobile.jpg"
+            alt="Product image"
+          >
+        </picture>
+
+        <div
+          class="product-preview-card__content product-preview-card__content_bc_white"
+        >
+          <p
+            class="product-preview-card__subtitle product-preview-card__subtitle_text-transform_uppercase"
+          >
+            Perfume
+          </p>
+          <h1 class="product-preview-card__title">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="product-preview-card__description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <div class="product-preview-card__price">
+            <span
+              class="product-preview-card__price_dark-cyan product-preview-card__price_big"
+              >$149.99</span
+            >
+            <span
+              class="product-preview-card__price_text-decoration_line-through product-preview-card__price_small product-preview-card__price_dark-grayish-blue"
+              >$169.99</span
+            >
+          </div>
+
+          <button class="product-preview-card__button">
+            <span class="product-preview-card__icon">
+              <img src="images/icon-cart.svg" alt="Cart icon ">
+            </span>
+            <span class="product-preview-card__text">Add to Cart</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/roma-nikolaichuk/product-preview-card-component">Roman Nikolaichuk</a>.
+    </div> -->
+  </body>
+</html>
